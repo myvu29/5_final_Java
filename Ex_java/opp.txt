@@ -1,0 +1,34 @@
+---------abstract thì dùng extends để kế thừa (thích thì dùng , ko thì ko bắt buộc), ko cần 100% là hàm trừu tượng
+------------interface thì dùng implements để cài đặt- sử dụng( đây là bắt buộc đã cài đătj là phải sử dụng các hàm mà nó khai báo)
+nghĩa là ta phải ghi đè lại tất cả các hàm đã khai báo
+------interface :100%hàm phải là trừu tượng, tất cả hàm trong nó đều public
+
+
+----kế thừa extends 
+vd nguoi kế thừa sinh viên ghi
+class Nguoi extends SinhVien{
+....
+}
+------lớp trừu tượng(ko thể tạo ra hàm khởi tạo): abstract
+public abstract class Enemy {
+    public void DiChuyen(){
+        System.out.println("Enemy di chuyen");
+    }
+    public void TanCong(){
+        System.out.println("Enemy tan cong");
+    }
+}
+-----Hàm  trừu tượng abstract: bắt buộc lớp con phải ghi đè lại hàm ý, và hàm trừu tượng ko có thân hàm xem vd ở dưới
+vd 
+public abstract class Enemy {
+    public abstract void DiChuyen();// ham trừu tượng ở đây
+    public void TanCong(){
+        System.out.println("Enemy tan cong");
+    }
+}
+----interface: dùng cho khi class đã kế thừa
+
+
+// ĐA HÌNH:(vd ghi đè cũng là đa hình)
+Overriding(giống tham số, kiểu trả về  nhưng nooiij dung có thể khác nhau):class cha con
+Oveloading: cùng class( khác tham số)
